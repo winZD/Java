@@ -1,0 +1,19 @@
+Kod sinkroniziranog bloka koda zaključava se cijeli objekt(u ovom slučaju lista1),
+tj. prvi thread zaključava listu1(objekt), dok je drugom threadu omogućen ulazak u drugi 
+objekt(listu2), te se omogućava paralelno izvršavanje zadataka(u ovom slučaju popunjavanje listi).
+Zato je i brzina programa najveća  u tom slučaju.
+
+
+
+Kod sinkroniziranih metoda zaključava se samo ta metoda. Prvi thread zaključava metodu populateLst1
+i onemogućava da drugi thread uđe u drugi metodu te obavi zadatak.
+Zato je i brzina programa najsporija, jer drugi thread čeka da prvi thread popuni prvu listu, pa tek onda otključava
+se ulaz za drugi thread u drugu metodu.
+
+
+
+
+Kod main threada brzina izvođenja programa je slična kao i kod prvog slučaja.
+Jedan thread popunjava sve metode u isto vrijeme.
+
+

@@ -1,0 +1,2 @@
+
+U ovom projektu je koristeno visenitno programiranje, Command pattern i mrezno programiranje

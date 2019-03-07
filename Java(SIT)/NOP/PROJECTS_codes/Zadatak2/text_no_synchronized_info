@@ -1,0 +1,4 @@
+﻿Nakon što smo ukonili sinkronizacijumetoda dobili smo tzv race hazard.
+
+Stanje objekta je nekonzistentno.Nismo zaključali objekat te jedna i druga nit ostala otključana, o daljnjem ponašanju koda sve ovisi o
+JVM-u te ne možemo predviditi daljnje ponašanje,u ovom slučaju list ese ne popunjavaju jednoliko što je vidljivo i u ispisu.
