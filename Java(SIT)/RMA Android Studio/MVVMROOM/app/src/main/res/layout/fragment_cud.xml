@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!-- ************ -->
+
+
+        <TextView
+            android:id="@+id/dateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Todays date" />
+
+        <EditText
+            android:id="@+id/currentDate_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/labelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/labelBeerName" />
+
+        <EditText
+            android:id="@+id/beerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp" />
+
+        <!-- ************ -->
+
+        <TextView
+            android:id="@+id/labelPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/labelPrice" />
+
+        <EditText
+            android:id="@+id/beerPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/labelLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/labelBeerMadeIn" />
+
+        <EditText
+            android:id="@+id/beerMadeIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp" />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/newBeer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newBeer" />
+
+        <Button
+            android:id="@+id/takePicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/takePicture" />
+
+        <Button
+            android:id="@+id/changeBeer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/changeBeer" />
+
+        <Button
+            android:id="@+id/deleteBeer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deleteBeer" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/back" />
+
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/labelaSlika"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
