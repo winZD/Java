@@ -160,7 +160,7 @@ public class CUDFragment extends Fragment {
 
 
         if(beerModel.getBeer().getBeerPicturePath()==null){
-            Picasso.get().load(R.drawable.nepoznato).fit().centerCrop().into(picture);
+            Picasso.get().load(R.drawable.unknown_beer_picture).fit().centerCrop().into(picture);
             return;
         }
         Picasso.get().load(beerModel.getBeer().getBeerPicturePath()).fit().centerCrop().into(picture);

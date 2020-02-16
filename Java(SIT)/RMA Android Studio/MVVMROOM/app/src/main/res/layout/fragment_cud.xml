@@ -26,7 +26,7 @@
             android:id="@+id/dateTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Todays date" />
+            android:text="Date of storing beer:" />
 
         <EditText
             android:id="@+id/currentDate_time"
@@ -113,7 +113,7 @@
             android:id="@+id/picture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/labelaSlika"
+            android:contentDescription="@string/labelaPicture"
             tools:srcCompat="@tools:sample/avatars" />
 
 

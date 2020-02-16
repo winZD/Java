@@ -1,21 +1,19 @@
 <resources>
     <string name="app_name">MVVMROOM</string>
-    <string name="labelaSifra">Šifra</string>
-    <string name="labelaIme">Ime</string>
-    <string name="labelaPrezime">Prezime</string>
-    <string name="labelaNazad">Nazad</string>
-    <string name="labelaSlika">Slika osobe</string>
-    <string name="labelaNovi">Kreiraj novu osobu</string>
-    <string name="labelaPromjeni">Promjeni osobu</string>
-    <string name="labelaObrisi">Obriši osobu</string>
-    <string name="labelaUslikaj">Uslikaj</string>
+
+    <string name="labelaPicture">Picture of beer</string>
+
 
 
     <string name="date_text_view">Date:</string>
 
     <string name="labelBeerName">Beer name:</string>
     <string name="labelBeerMadeIn">Country of origin:</string>
-    <string name="labelPrice">Price:</string>
+    <string name="labelPrice">Price (€):</string>
+    <string name="beerType">Beer type:</string>
+    <string name="madeIn">Country of origin:</string>
+
+
     <string name="newBeer">Add beer</string>
     <string name="changeBeer">Change beer</string>
     <string name="deleteBeer">Delete beer</string>

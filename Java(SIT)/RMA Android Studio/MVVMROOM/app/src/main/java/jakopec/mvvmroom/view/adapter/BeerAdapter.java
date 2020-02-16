@@ -35,7 +35,7 @@ public class BeerAdapter extends BaseAdapter {
     /* @Override
      public Red onCreateViewHolder(ViewGroup roditelj, int viewType) {
          LayoutInflater layoutInflater = LayoutInflater.from(roditelj.getContext());
-         View view = layoutInflater.inflate(R.layout.red_liste, roditelj, false);
+         View view = layoutInflater.inflate(R.layout.row_list, roditelj, false);
          return new Red(view);
      }
 
@@ -97,7 +97,7 @@ public class BeerAdapter extends BaseAdapter {
 
 
         if (convertView == null) {
-           convertView = layoutInflater.inflate(R.layout.red_liste, null);
+           convertView = layoutInflater.inflate(R.layout.row_list, null);
             holder = new ViewHolder(convertView);
             holder.beerName = convertView.findViewById(R.id.beerName);
             holder.typeOfBeer=convertView.findViewById(R.id.typeOfBeer);
@@ -107,8 +107,9 @@ public class BeerAdapter extends BaseAdapter {
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
-        holder.beerName.setText(beer.getBeerName());
-        holder.typeOfBeer.setText(beer.getTypeOfBeer());
+        holder.beerName.setText(beer.getBeerName().toUpperCase());
+        holder.typeOfBeer.setText(beer.getTypeOfBeer().toUpperCase());
+        holder.madeIn.setText(beer.getBeerMadeIn().toUpperCase());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,7 +119,7 @@ public class BeerAdapter extends BaseAdapter {
         });
 
         if (beer.getBeerPicturePath() == null) {
-            Picasso.get().load(R.drawable.nepoznato).fit().centerCrop().into(holder.picture);
+            Picasso.get().load(R.drawable.unknown_beer_picture).fit().centerCrop().into(holder.picture);
             return convertView;
         }
         Picasso.get().load(beer.getBeerPicturePath()).fit().centerCrop().into(holder.picture);
@@ -131,12 +132,14 @@ public class BeerAdapter extends BaseAdapter {
         private ImageView picture;
         private TextView beerName;
         private TextView typeOfBeer;
+        private TextView madeIn;
 
         ViewHolder(View itemView) {
             super(itemView);
             picture = itemView.findViewById(R.id.pictureBeer);
             beerName = itemView.findViewById(R.id.beerName);
             typeOfBeer= itemView.findViewById(R.id.typeOfBeer);
+            madeIn=itemView.findViewById(R.id.countryOfOrigin);
         }
     }
 

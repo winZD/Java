@@ -27,7 +27,7 @@ public class ReadFragment extends Fragment {
 
     @BindView(R.id.swipeContainer)
     SwipeRefreshLayout swipeRefreshLayout;
-    @BindView(R.id.lista)
+    @BindView(R.id.readList)
     ListView listView;
 
     BeerViewModel beerModel;
@@ -74,7 +74,7 @@ public class ReadFragment extends Fragment {
 
     private void definirajListu() {
 
-        listView = (ListView)listView.findViewById(R.id.lista);
+        listView = (ListView)listView.findViewById(R.id.readList);
         listView.setAdapter(new BeerAdapter(getActivity(), new BeerClickListener() {
             @Override
             public void onItemClick(Beer beer) {
